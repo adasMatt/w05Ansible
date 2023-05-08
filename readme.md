@@ -22,7 +22,7 @@ Here are the commands run on the master EC2 instance for the Ansible assignment.
 ![picture describing terminal code for setting up master EC2 instance with Ansible](https://github.com/adasMatt/w05Ansible/blob/master/images/mattAnsibleMasterEC2.jpg "Setup Ansible master server")
 
 ## Bonus
-As a bonus, here is how to create a repo and push to GitHub all from a Linux terminal
+As a bonus, here is how to create a repo in your WSL Ubuntu and push to GitHub all from a Linux terminal. Before follow the steps pictured below, run `git init` in whichever directory you would like to make a repo out of and put onto GitHub. 
 
 ![picture describing terminal code for creating and pushing locally created git repo to GitHub](https://github.com/adasMatt/w05Ansible/blob/master/images/ghRepoCreate.png "Create new git repo and push to GitHub from terminal")
 
