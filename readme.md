@@ -1,7 +1,7 @@
 # This is for Code Platoon Alpha DevOps cohort '23.
 
 ## Here are the commands run on the master EC2 instance for the Ansible assignment.
-![picture describing terminal code for setting up master EC2 instance with Ansible](https://github.com/adasMatt/w05Ansible/blob/master/images/ghRepoCreate.png "Setup Ansible master server")
+![picture describing terminal code for setting up master EC2 instance with Ansible](https://github.com/adasMatt/w05Ansible/blob/master/images/mattAnsibleMasterEC2.jpg "Setup Ansible master server")
 
 ## As a bonus, here is how to create a repo and push to GitHub all from a Linux terminal
 
