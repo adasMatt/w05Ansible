@@ -19,7 +19,7 @@ Log in as root to make changes in ansible.cfg but how? I don't think I set a pas
 Maybe a bit of a rabbit hole for the purpose of this assignment?: http://www.freekb.net/Article?id=2844 
 
 ### Setting up Ansible in master EC2
-Here are the commands run on the master EC2 instance for the Ansible assignment. Keep in mind lines have been deleted from history and may be presented out-of-order:
+Here are the commands run on the master EC2 instance for the Ansible assignment. Keep in mind lines have been deleted from history and are presented out-of-order:
 ![picture describing terminal code for setting up master EC2 instance with Ansible](https://github.com/adasMatt/w05Ansible/blob/master/images/mattAnsibleMasterEC2.jpg "Setup Ansible master server")
 
 ## Bonus
