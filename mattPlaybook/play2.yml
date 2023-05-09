@@ -1,0 +1,8 @@
+---
+- name: Apache removal for ubuntuserver
+  hosts: webservers
+  tasks:
+   - name: removing apache and wget
+     yum:
+       name: httpd
+       state: absent
