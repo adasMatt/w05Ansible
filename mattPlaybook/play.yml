@@ -1,0 +1,56 @@
+---
+- name: Apache installation for webservers
+  hosts: webservers
+  tasks:
+    - name: check if Apache is installed
+      yum:
+        pkg: ['httpd', 'wget']
+        state: present
+    - name: Copy html file
+      copy:
+        content: "<h1>Hello Ansible"
+        dest: /var/www/html/hello-devops.html
+        mode: 0744
+    - name: restart apache2
+      service:
+        name: httpd
+        state: restarted
+        enabled: yes
+    - name: Add a new user for webservers
+      ansible.builtin.user:
+        name: guest
+        # uid: 1041
+        state: present
+
+# - name: Apache installation for ubuntuservers
+#   hosts: ubuntuservers
+#   tasks:
+#     - name: install the latest version of Apache
+#       apt:
+#         name: apache2
+#         state: present
+
+#     - name: Copy html file
+#       copy:
+#         content: "<h1>Hello Ansible"
+#         dest: /var/www/html/hello-devops.html
+#         mode: 0744
+#     - name: restart apache2
+#       service:
+#         name: apache2
+#         state: restarted
+#         enabled: yes
+#     - name: Add a new user for ubuntuservers
+#       ansible.builtin.user:
+#         name: guest
+#         # uid: 1041
+#         state: present
+
+- name: Add new user for DB
+  hosts: dbservers
+  tasks:
+    - name: Add new user for dbservers
+      ansible.builtin.user:
+        name: guest
+        # uid: 1041
+        state: present
