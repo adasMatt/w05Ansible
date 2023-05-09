@@ -2,15 +2,16 @@
 
 ## Assignment 
 See final inventory files in mattAnsible/ directory.
+
 What I did:
 Launched 3 instances from AWS console, default VPC, same security group for all 3 allowing ssh and http, user data only updates yum. Code in terminal history pictured requires careful thought, lines have been deleted and may be presented out-of-order. 
 
-Submit the written commands for following actions.
-###
+Written commands for various ansible group listings:
+<br />
 List all the hosts: ansible all --list-hosts -i inventory
-###
+<br />
 List only the web servers: ansible webservers --list-hosts -i inventory
-###
+<br />
 List only the db servers: ansible dbservers --list-hosts -i inventory
 
 Other thoughts:
