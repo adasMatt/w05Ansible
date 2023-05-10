@@ -18,7 +18,9 @@ I had to recreate the directory manually just once with the server I was working
 
 ### From play2.yml
 I originally put path: /var/www/html/ in the delete html file task, I believe that destroyed the entire directory but not entirely certain. Also not entirely sure why installing Apache in play.yml doesn't recreate /var/www/html.
-    - name: delete html file
-      file:
-        state: absent
-        path: /var/www/html/*
+```
+- name: delete html file
+    file:
+    state: absent
+    path: /var/www/html/*
+```
