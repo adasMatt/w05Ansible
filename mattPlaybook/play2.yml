@@ -2,7 +2,12 @@
 - name: Apache removal for ubuntuserver
   hosts: webservers
   tasks:
-   - name: removing apache and wget
-     yum:
-       name: httpd
-       state: absent
+    - name: removing apache 
+      yum:
+        name: httpd
+        state: absent
+    # I originally put path: /var/www/html/ in the delete html file task, I believe that destroyed the entire directory but not entirely certain. Also not entirely sure why installing Apache in play.yml doesn't recreate /var/www/html.
+    - name: delete html file
+      file:
+        state: absent
+        path: /var/www/html/*

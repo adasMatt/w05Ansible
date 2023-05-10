@@ -4,13 +4,18 @@
   tasks:
     - name: check if Apache is installed
       yum:
-        pkg: ['httpd', 'wget']
+        name: httpd
         state: present
+    # I had to recreate the directory manually just once with the server I was working in with this. See play2.yml for another related comment.
+    # - name: Creates directory
+    #   file:
+    #     path: /var/www/html
+    #     state: directory
     - name: Copy html file
-      copy:
+      ansible.builtin.copy:
         content: "<h1>Hello Ansible"
         dest: /var/www/html/hello-devops.html
-        mode: 0744
+        #mode: 0744
     - name: restart apache2
       service:
         name: httpd
