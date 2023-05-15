@@ -4,15 +4,15 @@
 
 ## ssh into master node
 * update apt and install ansible
-    - Create env, 27:59
+    - Create env
     - Create ansible playbooks
-        - Create and run updates.yml 37:00
-        - Create and run packages.yml to install python, pip, nginx 38:00
-        - Create and run code.yml to clone github project and install listed requirements 40:00
-        - Create and run copyenv.yml to setup db in target nodes 43:20
-        - Create todolist.service 44:40, create and run gunicorn.yml to setup and start gunicorn daemon service
+        - Create and run updates.yml
+        - Create and run packages.yml to install python, pip, nginx 
+        - Create and run code.yml to clone github project and install listed requirements 
+        - Create and run copyenv.yml to setup db in target nodes 
+        - Create todolist.service, create and run gunicorn.yml to setup and start gunicorn daemon service
             - Service files can change and daemon needs to be restarted, handler part in gunicorn.yml playbook automates restarting daemon 
-    - nginx, separately on each node 1:08:00
+    - nginx, separately on each node
         - Create todolist file in target nodes and find public_ip
 * AWS console for load balancer
     - Target groups: include target nodes port 9876
