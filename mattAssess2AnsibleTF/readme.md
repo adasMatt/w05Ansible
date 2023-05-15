@@ -1,6 +1,6 @@
 # Assessment Walkthrough 
 ## Terraform IaC with main.tf and providers.tf files
-* main.tf includes 2 SGs, one for master node including ssh permissions and one for target nodes including http permissions.
+main.tf includes 2 SGs, one for master node including ssh permissions and one for target nodes including http permissions.
 
 ## ssh into master node
 * update apt and install ansible
