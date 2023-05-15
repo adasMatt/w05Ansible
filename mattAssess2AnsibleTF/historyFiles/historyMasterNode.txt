@@ -1,0 +1,44 @@
+    1  ls
+    2  sudo apt update
+    3  sudo apt install ansible -y
+    4  mkdir todolist
+    5  cd todolist/
+    6  code env
+    7  cd
+    8  mkdir ansible
+    9  cd ansible/
+   10  code inventory.ini
+   11  history 
+   12  code ../.ssh/key.pem
+   13  chmod 400 ../.ssh/key.pem 
+   14  cd ansible/
+   15  ansible all -m ping -i inventory.ini
+   16  ansible
+   17  cp packages.yml updates.yml; ls
+   18  code updates.yml 
+   19  rm packages.yml 
+   20  ansible-playbook -i inventory.ini updates.yml 
+   21  code packages.yml
+   22  ansible-playbook -i inventory.ini packages.yml 
+   23  ansible-playbook -i inventory.ini code.yml 
+   24  ansible-playbook -i inventory.ini copyenv.yml 
+   25  cd ../todolist/
+   26  echo '
+   27  [Unit]
+   28  Description=Gunicorn instance to serve todolist
+   29  Wants=network.target
+   30  After=syslog.target network-online.target
+   31  [Service]
+   32  Type=simple
+   33  WorkingDirectory=/home/ubuntu/todo-list
+   34  ExecStart=/home/ubuntu/todo-list/venv/bin/gunicorn -c /home/ubuntu/todo-list/gunicorn_config.py
+   35  Restart=always
+   36  RestartSec=10
+   37  [Install]
+   38  WantedBy=multi-user.target' > todolist.service
+   39  cd ansible/
+   40  ansible-playbook -i inventory.ini gunicorn.yml 
+   41  pwd
+   42  history
+   43  ls
+   44  history > historyMasterNode.txt

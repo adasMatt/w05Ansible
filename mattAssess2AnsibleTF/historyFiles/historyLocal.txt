@@ -1,0 +1,70 @@
+ 1987  code codePlatoon/to-do-list-django/
+ 1988  code codePlatoon/review-TF.tf
+ 1989  code codePlatoon/w04TFLessons/01mattWPTF/
+ 1990  cp ~/codePlatoon/w04TFLessons/01mattWPTF/providers.tf .
+ 1991  code ~/codePlatoon/w04TFLessons/sshEC2/main.tf 
+ 1992  code ~/codePlatoon/w04TFLessons/01mattWPTF/main.tf 
+ 1993  code ~/codePlatoon/w04TFLessons/learn-terraform-count/main.tf 
+ 1994  code ~/codePlatoon/w04TFLessons/sshEC2/main.tf 
+ 1995  cd terraform/; terraform init
+ 1996  terraform plan
+ 1997  terraform show
+ 1998  tfa
+ 1999  terraform show
+ 2000  terraform show | less
+ 2001  code ~/codePlatoon/w04TFLessons/countEC2/main.tf 
+ 2002  tfa
+ 2003  rm variables.tf 
+ 2004  code ../Ansible\ Django\ app.md 
+ 2005  code ~/codePlatoon/w05Ansible/mattPlaybook/play.yml 
+ 2006  code ~/codePlatoon/w05Ansible/mattPlaybook/inventory.ini 
+ 2007  code ~/.ssh/actual-first-key.pem 
+ 2008  tfa
+ 2009  terraform apply
+ 2010  tfa
+ 2011  terraform init
+ 2012  tfa
+ 2013  history
+ 2014  ipconfig
+ 2015  terraform plan
+ 2016  tfa
+ 2017  terraform plan
+ 2018  code providers.tf 
+ 2019  terraform plan
+ 2020  sudo ntpdate pool.ntp.org
+ 2021  terraform plan
+ 2022  tfa
+ 2023  terraform plan
+ 2024  tfa
+ 2025  terraform plan
+ 2026  tfa
+ 2027  code ~/codePlatoon/w04TFLessons/01mattWPTF/main.tf 
+ 2028  code ~/codePlatoon/w04TFLessons/learn-terraform-count/main.tf 
+ 2029  code providers.tf 
+ 2030  code ~/codePlatoon/w04TFLessons/tf-modules/module-ec2/ec2-instance.tf 
+ 2031  code ~/codePlatoon/w04TFLessons/tf-modules/module-ec2/terraform.tf 
+ 2032  code ../ansible/packages.yml
+ 2033  code ../todolist
+ 2034  rm ../todolist; code ../todolist/env
+ 2035  ls
+ 2036  mv ../env ../todolist/env
+ 2037  mv ../todolist.service ../todolist/
+ 2038  ls ../todolist/
+ 2039  code ../todolist/todolist.service 
+ 2040  cd ../
+ 2041  man cp
+ 2042  cp terraform/ newTerraform/; ls
+ 2043  cp -r terraform/ newTerraform/; ls
+ 2044  cd newTerraform/; code main.tf
+ 2045  code ../historyMasterNode.txt
+ 2046  code ../historyNode0.txt
+ 2047  cd ..
+ 2048  cd terraform/; code main.tf 
+ 2049  terraform plan
+ 2050  history
+ 2051  sudo ntpdate pool.ntp.org
+ 2052  terraform plan
+ 2053  tfa
+ 2054  history
+ 2055  cd ..
+ 2056  history > historyLocal.txt

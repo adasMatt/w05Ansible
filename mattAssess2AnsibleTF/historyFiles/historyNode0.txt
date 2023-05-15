@@ -1,0 +1,48 @@
+    1  ls /etc/nginx/sites-available/
+    2  echo "
+    3    server {
+    4    listen 80;
+    5    server_name public_ip;
+    6    location / {
+    7      proxy_pass http://localhost:9876;
+    8      proxy_http_version 1.1;
+    9      proxy_set_header Upgrade $http_upgrade;
+   10      proxy_set_header Connection 'upgrade';
+   11      proxy_set_header Host $host;
+   12      proxy_cache_bypass $http_upgrade;
+   13      }
+   14    }" >> todolist
+   15  sudo apt update
+   16  rm todolist 
+   17  history 
+   18  ls /etc/nginx/sites-available/
+   19  curl http://localhost:9876/api/v1/lists/
+   20  history > historyNode0.txt
+   21  code historyNode0.txt 
+   22  echo '
+server {
+    listen 80;
+
+    server_name public_ip;
+
+    location / {
+        proxy_pass http://localhost:9876;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}' > todolist
+   23  sed -i 's/public_ip/'${public_ip}'/g' todolist
+   24  public_ip=$(curl ipinfo.io/ip)
+   25  sed -i 's/public_ip/'${public_ip}'/g' todolist
+   26  sudo cp todolist /etc/nginx/sites-available/todolist
+   27  man sed
+   28  sudo ln -s /etc/nginx/sites-available/todolist /etc/nginx/sites-enabled/todolist
+   29  man ln
+   30  curl http://localhost:9876/api/v1/lists/
+   31  code /etc/nginx/sites-available/default 
+   32  code /etc/nginx/sites-available/todolist 
+   33  code /etc/nginx/sites-available/default 
+   34  history > historyNode0.txt
