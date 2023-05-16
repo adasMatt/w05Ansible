@@ -27,6 +27,8 @@ As a bonus, here is how to create a repo in your WSL Ubuntu and push to GitHub a
 
 ![picture describing terminal code for creating and pushing locally created git repo to GitHub](https://github.com/adasMatt/w05Ansible/blob/master/images/ghRepoCreate.png "Create new git repo and push to GitHub from terminal")
 
+After following the prompts in this image, do: `git push --set-upstream origin master` and the url will now be present on github.
+
 And as another bonus, here's an example of inlcuding images in a readme.md
 
 ![inlcuding images in a readme.md](https://github.com/adasMatt/w05Ansible/blob/master/images/readmeMarkdownWithImages.png "Inlcuding images in a readme.md")
