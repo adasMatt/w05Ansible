@@ -20,3 +20,6 @@ main.tf includes 2 SGs, one for master node including ssh permissions and one fo
 
 ## Architecture
 ![Architecture behind deployment of To Do App](https://github.com/adasMatt/w05Ansible/blob/master/images/toDoAppTFAnsibleArch.jpg "To do app ")
+
+## To Do
+Create new branch and add nginx
