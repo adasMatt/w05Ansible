@@ -1,3 +1,3 @@
-env
-./terraform/.terraform*
-./newTerraform/**
+mattAssess2AnsibleTF/env
+mattAssess2AnsibleTF/terraform/.terraform*
+mattAssess2AnsibleTF/newTerraform/**
