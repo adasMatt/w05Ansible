@@ -5,7 +5,7 @@ main.tf includes 2 SGs, one for master node including ssh permissions and one fo
 ## ssh into master node
 * update apt and install ansible
     - Create env
-    - Create ansible playbooks
+    - Create ansible playbooks and run `ansible-playbook -i inventory.ini <insert-relevant-playbook>.yml` to push instructions to target nodes
         - Create and run updates.yml
         - Create and run packages.yml to install python, pip, nginx 
         - Create and run code.yml to clone github project and install listed requirements 
