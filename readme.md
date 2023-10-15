@@ -1,6 +1,6 @@
 # This is for Code Platoon Alpha DevOps cohort '23.
 
-## Ansible and Terraform Assessment for CP Alpha DevOps 
+## Proj 1. Ansible and Terraform Assessment for CP Alpha DevOps 
 See files for this project in the [mattAssess2AnsibleTF/](https://github.com/adasMatt/w05Ansible/tree/master/mattAssess2AnsibleTF) directory.
 A brief summary:
 - Used Terraform to launch EC2 instances with only ssh permission for master node, http & desired port forwarding (9876 for this project) permission for target nodes (see [terraform files](https://github.com/adasMatt/w05Ansible/tree/master/mattAssess2AnsibleTF/terraform) for more details)
@@ -8,8 +8,8 @@ A brief summary:
 - Install reverse proxy/webserver (nginx) on target nodes 
 - Add load balancer through AWS console (could be automated with terraform as alternative method)
 
-## Basic Inventory Files To Setup Master-Target Node Relation of EC2 Instances
-See files for this project in the mattAnsible/ directory.
+## Proj 2. Basic Inventory Files To Setup Master-Target Node Relation of EC2 Instances
+See files for this project in the [mattAnsible/](https://github.com/adasMatt/w05Ansible/tree/master/mattAnsible) directory.
 
 What I did:
 Launched 3 EC2 instances from AWS console, default VPC, same security group for all 3 allowing ssh and http, user data only updates yum. Code in terminal history pictured requires careful thought, lines have been deleted and may be presented out-of-order. 
